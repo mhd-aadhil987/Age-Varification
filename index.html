@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>age</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Enter  Your Age:</h1>
+
+    <input type="number" id="textBox"> <br><br>
+
+    <button onclick="display()">Submit</button>
+
+    <p id="output"></p>
+
+
+
+    <script>
+        
+        function display(){
+            let text = document.getElementById('textBox');
+            let output = document.getElementById('output');
+            let num = Number(text.value);
+
+
+            if(num >= 20){
+                output.textContent = "Congrats!, You are enough to get married.";
+            }
+            else{
+                output.textContent = "Thambi  Poi oombuda";
+            }
+        }
+
+    </script>
+</body>
+</html>
